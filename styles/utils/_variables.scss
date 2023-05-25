@@ -1,0 +1,20 @@
+$c-bg: #ececec;
+$c-alt: #750D37;
+$c-hover: #a01d51;
+$c-text: #252525;
+$c-dyna: #516A6B;
+
+$size-title-h1: 76px;
+$size-title-h2: 32px;
+$size-title-h3: 24px;
+$size-title-h4: 20px;
+$line-height: 1.333;
+$size-text: 18px;
+
+body{
+    --size-tittle-h1: #{$size-title-h1};
+    @media screen and (min-width:720px) {
+        --size-tittle-h1: 120px;
+    }
+}
+

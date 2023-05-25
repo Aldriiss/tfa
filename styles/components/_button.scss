@@ -1,0 +1,14 @@
+.button{
+    padding: 16px 32px;
+    background-color: $c-alt;
+    color: white;
+    border-radius: 24px;
+    cursor: pointer;
+
+    &:hover,&:active,&:focus{
+        background-color: $c-bg;
+        color: $c-alt;
+        box-shadow: inset 0px 0px 0px 3px $c-alt;
+    }
+   
+} 

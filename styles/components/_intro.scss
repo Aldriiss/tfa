@@ -1,0 +1,43 @@
+.intro{
+  margin-right: 0;
+  margin-left: 0;
+  .title{
+    margin-bottom: 32px;
+    margin-top: 64px;
+    color: $c-alt;
+    font-family: $font-famJ;
+    &--modif{
+      font-family: $font-famD;
+    }
+  }
+
+  &__image{
+    filter:contrast(0.8);
+    width: 100%;
+    max-width: 600px;
+    border-radius: 60px;
+  }
+
+  &__text{
+    margin-left: 32px;
+  }
+
+  .h3{
+    margin-top: 72px;
+  }
+  
+}
+
+.bienvenue{
+  margin-top: 128px;
+  margin-bottom: 128px;
+
+  .color--alt{
+    color: $c-dyna;
+  }
+  
+}
+.important{
+  font-size: calc($size-text + 2px);
+  font-weight: normal;
+}

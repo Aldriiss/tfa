@@ -1,0 +1,39 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: lighter;
+  font-size: $size-text;
+  line-height: $line-height;
+  color: $c-text;
+  margin: 0;
+  word-break: break-word;
+  scroll-behavior: smooth;
+}
+
+//h1aaa
+.title {
+  color: $c-alt;
+  font-family: 'Dancing Script', sans-serif;
+  font-size: var(--size-tittle-h1);
+}
+//h2
+.subtitle{
+  font-size: $size-title-h2;
+  color: $c-dyna;
+}
+
+.red{
+  color: $c-alt;
+}
+//h3
+.h3{
+  font-size: $size-title-h3;
+}
+
+.lien{
+  text-decoration: none;
+  color: $c-bg;
+}
+
+.section{
+  margin: 64px 32px;
+}
