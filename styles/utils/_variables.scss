@@ -11,10 +11,32 @@ $size-title-h4: 20px;
 $line-height: 1.333;
 $size-text: 18px;
 
-body{
+:root{
     --size-tittle-h1: #{$size-title-h1};
-    @media screen and (min-width:720px) {
-        --size-tittle-h1: 120px;
+    --size-tittle-h2: #{$size-title-h2};
+    --size-tittle-h3: #{$size-title-h3};
+    --size-tittle-h4: #{$size-title-h4};
+    --line-height: #{$line-height};
+    --size-text: #{$size-text};
+
+    //tablette
+    @media screen and (min-width:720px) and (max-width:1080px) {
+        --size-tittle-h1: 80px;
+        --size-tittle-h2: 40px;
+        --size-tittle-h3: 28px;
+        --size-tittle-h4: 24px;
+        --line-height: 1.414;
+        --size-text: 20px;
+    }
+
+    //Desktop
+    @media screen and (min-width:1080px) {
+        --size-tittle-h1: 111px;
+        --size-tittle-h2: 50px;
+        --size-tittle-h3: 33px;
+        --size-tittle-h4: 27px;
+        --line-height: 1.5;
+        --size-text: 22px;
     }
 }
 

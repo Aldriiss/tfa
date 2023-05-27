@@ -1,8 +1,8 @@
 body {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: lighter;
-  font-size: $size-text;
-  line-height: $line-height;
+  font-size: var(--size-text);
+  line-height: var(--line-height);
   color: $c-text;
   margin: 0;
   word-break: break-word;
@@ -17,7 +17,7 @@ body {
 }
 //h2
 .subtitle{
-  font-size: $size-title-h2;
+  font-size: var(--size-tittle-h2);
   color: $c-dyna;
 }
 
@@ -26,8 +26,13 @@ body {
 }
 //h3
 .h3{
-  font-size: $size-title-h3;
+  font-size: var(--size-tittle-h3);
 }
+//h4
+.h4{
+  font-size: var(--size-tittle-h4);
+}
+
 
 .lien{
   text-decoration: none;
@@ -40,4 +45,9 @@ body {
 
 p{
   max-width: 64ch;
+}
+
+.important{
+  font-size: calc(var(--size-text) + 2px);
+  font-weight: normal;
 }
