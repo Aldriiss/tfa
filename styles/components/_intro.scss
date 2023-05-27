@@ -1,6 +1,4 @@
 .intro{
-  margin-right: 0;
-  margin-left: 0;
   .title{
     margin-bottom: 32px;
     margin-top: 64px;
@@ -14,12 +12,8 @@
   &__image{
     filter:contrast(0.8);
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
     border-radius: 60px;
-  }
-
-  &__text{
-    margin-left: 32px;
   }
 
   .h3{
