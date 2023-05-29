@@ -21,23 +21,43 @@ body {
   color: $c-dyna;
 }
 
-.red{
-  color: $c-alt;
-}
 //h3
 .h3{
   font-size: var(--size-tittle-h3);
+  margin-top: 72px;
 }
 //h4
 .h4{
   font-size: var(--size-tittle-h4);
 }
 
+//ecriture en couleur
+.red{
+  color: $c-alt;
+}
 
+.color--alt{
+  color: $c-dyna;
+}
+
+//style lien
 .lien{
   text-decoration: none;
   color: $c-bg;
 }
+
+.texte__lien{
+  display: inline;
+  &::after{
+    content:"";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: $c-alt;
+  }
+}
+
 
 .section{
   margin: 64px 32px;
