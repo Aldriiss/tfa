@@ -24,6 +24,16 @@ if(burgerButton){
 
 };
 
+var menuItems = document.querySelectorAll('.nav__el');
+
+function animateMenuItems() {
+  menuItems.forEach(function(item, index) {
+    setTimeout(function() {
+      item.classList.add('slide-in');
+    }, index * 100); // Ajoute un délai d'apparition progressif
+  });
+}
+
 // API pour les graph style google
 google.charts.load('current', {'packages':['corechart']});
 
