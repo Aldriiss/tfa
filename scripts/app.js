@@ -43,19 +43,14 @@ function drawChart1() {
   data.addColumn('string', 'Topping');
   data.addColumn('number', 'Slices');
   data.addRows([
-    ['Oui Beaucoup', 4],
-    ['Oui', 2],
+    ['Oui Beaucoup', 2],
+    ['Oui', 6],
     ['Moyennement', 5],
     ['Non', 3],
   ]);
 
-  // Titre et taille du graphique
-  var options = {'title':'Votre cuisine vous satisfait-elle ?',
-                 'width':400,
-                 'height':300};
-
   var chart = new google.visualization.PieChart(document.getElementById('chart_div--1'));
-  chart.draw(data, options);
+  chart.draw(data);
 }
 
 // Second Graphique
@@ -67,15 +62,10 @@ function drawChart2() {
   data.addRows([
     ['Le temps', 7],
     ['Le prix', 3],
-    ['Le manque d\'\idées', 5],
     ['La vaisselles', 2],
+    ['Le manque d\'\idées', 5],
   ]);
 
-  // Titre et taille du graphique
-  var options = {'title':'Quel est le point négatif que vous rencontrez le plus en cuisinant ?',
-                 'width':400,
-                 'height':300};
-
   var chart = new google.visualization.PieChart(document.getElementById('chart_div--2'));
-  chart.draw(data, options);
+  chart.draw(data);
 }

@@ -1,5 +1,18 @@
 .dia{
-    font-family: $font-famJ;
+    position: relative;
+    left: -50px;
+
+    text{
+        font-family: $font-famJ;
+        font-size: 1rem;
+    }
+}
+.title__dia{
+    margin: 0;
 }
 
+#chart_div--1, #chart_div--2{
+    width: 100%;
+    height: 400px;
+}
 
