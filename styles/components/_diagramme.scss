@@ -1,10 +1,10 @@
 .dia{
-    position: relative;
-    left: -50px;
-
     text{
         font-family: $font-famJ;
         font-size: 1rem;
+    }
+    div{
+        width: auto;
     }
 }
 .title__dia{
