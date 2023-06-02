@@ -1,0 +1,24 @@
+.imageFond {
+    position: absolute;
+    width: 30rem;
+    opacity: 0.04;
+
+    &--1 {
+        rotate: 30deg;
+        top: 230px;
+        left: 0;
+    }
+
+    &--2 {
+        rotate: 130deg;
+        right: -20px;
+        top: 700px;
+        width: 20rem;
+    }
+
+    &--3 {
+        width: 40rem;
+        rotate: 20deg;
+        left: -50px;
+    }
+}
