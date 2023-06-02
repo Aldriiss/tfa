@@ -21,7 +21,7 @@
 
 ## Warning / Attention
 
-Ce projet n'est nullement à but lucratif et ne peut être reproduit. 
+Ce projet est nullement à but lucratif et ne peut être reproduit. 
 Ceci est la propriété de l'HEAJ ainsi que celle d'Adrien Vandenbussche.
 Ci vous désirez utiliser l'idée d'une quelconque manière merci d'envoyer un message privé à @Aldriiss
 
