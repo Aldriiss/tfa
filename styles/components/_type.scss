@@ -8,8 +8,13 @@ body {
   font-size: var(--size-text);
   line-height: var(--line-height);
   color: $c-text;
-  margin: 0 auto;
+  background-color: $c-bg;
   word-break: break-word;
+  margin: 0;
+}
+
+main {
+  margin: 0 auto;
   max-width: 1480px;
 }
 
