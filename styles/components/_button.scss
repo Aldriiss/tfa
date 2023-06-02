@@ -26,4 +26,21 @@
     padding: 24px 19px;
     text-decoration: none;
     text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+
+    &:hover .up {
+        &--blanc {
+            display: none;
+        }
+
+        &--alt {
+            display: initial;
+        }
+    }
+
+    .up {
+        &--alt {
+            display: none;
+        }
+    }
 }

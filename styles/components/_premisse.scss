@@ -1,26 +1,22 @@
-.intro{
-  .title{
+.premisse {
+  .title {
     margin-bottom: 32px;
     margin-top: 64px;
     color: $c-alt;
-    font-family: $font-famJ;
-    &--modif{
-      font-family: $font-famD;
-    }
   }
 
-  &__image{
-    filter:contrast(0.8);
+  &__image {
+    filter: contrast(0.8);
     width: 100%;
     max-width: 400px;
     border-radius: 60px;
   }
 
-  
-  
+
+
 }
 
-.bienvenue{
+.bienvenue {
   margin-top: 128px;
   margin-bottom: 128px;
 }
