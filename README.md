@@ -1,8 +1,8 @@
-# Simple Workflow with Laravel Mix.
+# TFA - Adrien Vandenbussche HEAJ
 
-## Install
+## TCook
 
-- `npm i`
+- Tcook est un projet mis en place par Adrien Vandenbussche dans le cadre de ses études à l'HEAJ, Afin de répondre à un manque de temps où d'idée en cuisine Ce TFA essayera dans un futur proche de répondre concraitement à des attentes bien précises.
 
 ## Features
 
@@ -19,7 +19,13 @@
 - `npm run build` : clean, lint and build the project.
 - `npm run clean` : clean the `dist` folder.
 
-## Warning
+## Warning / Attention
+
+Ce projet n'est nullement à but lucratif et ne peut être reproduit. 
+Ceci est la propriété de l'HEAJ ainsi que celle d'Adrien Vandenbussche.
+Ci vous désirez utiliser l'idée d'une quelconque manière merci d'envoyer un message privé à @Aldriiss
 
 Not intended to be used in production since minification as been disabled.  
 For school project purpose only.
+
+### Merci à vous et au plaisir
