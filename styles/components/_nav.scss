@@ -1,7 +1,8 @@
-.nav{
+.nav {
   height: 5rem;
   width: auto;
-  &__icones{
+
+  &__icones {
     list-style: none;
     display: flex;
     position: relative;
@@ -18,7 +19,7 @@
     align-items: center;
   }
 
-  &__menu{
+  &__menu {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -28,43 +29,45 @@
     padding: 0;
     left: 0;
     top: 0;
-    margin:0;
+    margin: 0;
     list-style: none;
     background-color: $c-alt;
     z-index: 1;
     transition: transform 1s ease-in-out;
     transform: translateY(-100%);
   }
+
   //animation menu
-  .switch{
+  .switch {
     transition: transform 1s ease-in-out;
     transform: translateY(0);
 
     //animation lien menu
-    .lien{
+    .lien {
       transition: transform 2s ease-in-out;
       transform: translateY(0);
     }
   }
 
-  .nav__el{
+  .nav__el {
     transition-delay: 1s;
     transition: transform 1s ease-in-out;
     transform: translateX(0);
   }
-  &__el{
-    margin-left: 32px ;
+
+  &__el {
+    margin-left: 32px;
     padding: 8px 12px;
     font-size: 25px;
-    
-    .lien{
+
+    .lien {
       display: block;
       padding: 12px 8px;
       transform: translateY(-200%);
       transition: transform 2s ease-in-out;
-      
-      &::after{
-        content:"";
+
+      &::after {
+        content: "";
         display: block;
         width: 100%;
         height: 3px;
@@ -72,33 +75,68 @@
         transition: width 0.5s ease-in-out;
       }
 
-      &:hover::after{
+      &:hover::after {
         width: 0;
       }
 
-      &:hover{
+      &:hover {
         color: $c-bg;
         background-color: #9b0e44;
       }
     }
   }
 
-  &__img{
+  &__img {
     height: 50px;
   }
 }
 
-
-.nav__exemple{
-  .nav__icones{
+//Ui-Kit
+.nav__exemple {
+  .nav__icones {
     padding-top: 10px;
     padding-bottom: 4px;
     z-index: -20;
   }
-  .nav__menu{
+
+  .nav__menu {
     z-index: -20;
   }
-  .burger{
+
+  .burger {
     z-index: -10;
+  }
+}
+
+//tablette
+//@media screen and (min-width:720px) and (max-width:1080px) {}
+
+//Desktop
+@media screen and (min-width:1080px) {
+  .nav {
+    display: flex;
+    background-color: $c-alt;
+    justify-content: space-between;
+
+    &__icones {
+      z-index: 210;
+    }
+
+    &__menu {
+      width: 100%;
+      position: static;
+      transition: transform 1s ease-in-out;
+      transform: translateY(0);
+      height: fit-content;
+      flex-direction: row;
+      background-color: initial;
+      z-index: 200;
+
+      //animation lien menu
+      .lien {
+        transition: transform 2s ease-in-out;
+        transform: translateY(0);
+      }
+    }
   }
 }

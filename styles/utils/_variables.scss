@@ -1,4 +1,4 @@
-$c-bg: #ececec;
+$c-bg: #fcfcfc;
 $c-alt: #750D37;
 $c-hover: #a01d51;
 $c-text: #252525;
@@ -11,7 +11,7 @@ $size-title-h4: 20px;
 $line-height: 1.333;
 $size-text: 18px;
 
-:root{
+:root {
     --size-tittle-h1: #{$size-title-h1};
     --size-tittle-h2: #{$size-title-h2};
     --size-tittle-h3: #{$size-title-h3};
@@ -39,4 +39,3 @@ $size-text: 18px;
         --size-text: 22px;
     }
 }
-

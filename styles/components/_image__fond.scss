@@ -1,0 +1,21 @@
+body {
+    background-image: url(../../assets/images/ustencils-fond.svg);
+    background-size: 80% auto;
+    background-position: center center;
+
+    //tablette
+    @media screen and (min-width:720px) and (max-width:1080px) {
+        background-size: 60% auto;
+    }
+
+    //Desktop
+    @media screen and (min-width:1080px) {
+        background-size: 40% auto;
+    }
+}
+
+//tablette
+//@media screen and (min-width:720px) and (max-width:1080px) {}
+
+//Desktop
+//@media screen and (min-width:1080px) {}
