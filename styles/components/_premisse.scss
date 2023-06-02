@@ -16,6 +16,8 @@
 //Desktop
 @media screen and (min-width:1080px) {
   .premisse {
+    margin-top: 88px;
+    margin-bottom: 88px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, fit-content);
@@ -27,6 +29,7 @@
 
     &__image {
       grid-area: 1 / 2 / 3 / 3;
+      justify-self: center;
     }
   }
 }

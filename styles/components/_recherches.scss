@@ -29,3 +29,19 @@
         margin-top: 64px;
     }
 }
+
+//tablette
+//@media screen and (min-width:720px) and (max-width:1080px) {}
+
+//Desktop
+@media screen and (min-width:1080px) {
+    .recherches {
+        .hypothese__exemple {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-column-gap: 24px;
+            grid-row-gap: 24px;
+        }
+    }
+}

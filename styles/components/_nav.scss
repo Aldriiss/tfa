@@ -14,8 +14,6 @@
     background-color: $c-alt;
     z-index: 120;
     padding: 0 3rem;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
     align-items: center;
   }
 
@@ -119,8 +117,6 @@
     display: flex;
     background-color: $c-alt;
     justify-content: space-between;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
 
     &__icones {
       z-index: 210;
