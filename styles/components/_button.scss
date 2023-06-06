@@ -18,16 +18,15 @@
 
 
 .button__top {
-    position: fixed;
-    bottom: 32px;
-    right: 32px;
-    background-color: $c-alt;
-    border-radius: 50%;
-    padding: 24px 19px;
     text-decoration: none;
     text-transform: uppercase;
     transition: all 0.2s ease-in-out;
     z-index: 10;
+    background-color: $c-text;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    align-self: center;
 
     &:hover .up {
         &--blanc {
@@ -35,13 +34,19 @@
         }
 
         &--alt {
-            display: initial;
+            display: inline;
         }
     }
 
     .up {
         &--alt {
             display: none;
+            max-width: 30px;
+        }
+
+        &--blanc {
+            display: inline;
+            max-width: 30px;
         }
     }
 }
