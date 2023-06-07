@@ -1,4 +1,5 @@
 # TFA - Adrien Vandenbussche HEAJ
+(/!\ la version à jour est la branche master et non pas main /!\)
 
 ## TCook
 
