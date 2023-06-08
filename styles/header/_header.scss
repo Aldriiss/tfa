@@ -100,26 +100,6 @@ header {
   }
 }
 
-//Ui-Kit
-.nav__exemple {
-  .nav__icones {
-    padding-top: 10px;
-    padding-bottom: 4px;
-    z-index: -20;
-  }
-
-  .nav__menu {
-    z-index: -20;
-  }
-
-  .burger {
-    z-index: -10;
-  }
-}
-
-//tablette
-//@media screen and (min-width:720px) and (max-width:1080px) {}
-
 //Desktop
 @media screen and (min-width:1080px) {
   .nav {

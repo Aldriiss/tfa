@@ -1,8 +1,37 @@
-.uikit{
-    h2{
+.uikit {
+    h2 {
         margin-top: 64px;
     }
-    .subtitle{
-        margin-top: auto;
+
+    .subtitle {
+        margin-top: 0;
+    }
+}
+
+//Ui-Kit
+.nav__exemple {
+    display: block;
+    background-color: $c-alt;
+
+    .nav__icones {
+        padding-top: 10px;
+        padding-bottom: 4px;
+    }
+
+}
+
+
+.background {
+    &__image {
+        height: 400px;
+        background-image: url(../../assets/images/ustencils-fond-uikit.svg);
+        max-width: 400px;
+
+    }
+
+    &__couleur {
+        width: auto;
+        max-width: 400px;
+        background-color: rgb(226, 226, 226);
     }
 }

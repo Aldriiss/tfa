@@ -5,77 +5,76 @@ let menu = document.querySelector(".nav__menu");
 let body = document.querySelector("body");
 let navEl = document.querySelectorAll(".nav__lien");
 
+if (burgerButton) {
+  burgerButton.addEventListener("click", () => {
+    burgerButton.classList.toggle('active');
+    menu.classList.toggle('switch');
 
-if(burgerButton){
-    burgerButton.addEventListener("click", () => {
-        burgerButton.classList.toggle('active');
-        menu.classList.toggle('switch');
-        body.classList.toggle('overflow');
-        
 
-    })
-    for (const el of navEl) {
-    el.addEventListener("click", Switch )
-    }
-    function Switch(){
-        menu.classList.remove("switch");
-        burgerButton.classList.remove('active');
-    }
+  })
+  for (const el of navEl) {
+    el.addEventListener("click", Switch)
+  }
+  function Switch() {
+    menu.classList.remove("switch");
+    burgerButton.classList.remove('active');
+  }
 
 };
 
-var menuItems = document.querySelectorAll('.nav__el');
+let menuItems = document.querySelectorAll('.nav__el');
 
 function animateMenuItems() {
-  menuItems.forEach(function(item, index) {
-    setTimeout(function() {
+  menuItems.forEach(function (item, index) {
+    setTimeout(function () {
       item.classList.add('slide-in');
     }, index * 100); // Ajoute un délai d'apparition progressif
   });
 }
 
-// API pour les graph style google
-google.charts.load('current', {'packages':['corechart']});
+let googlegrap = document.querySelector('.dia');
 
-google.charts.setOnLoadCallback(function() {
-  drawChart1();
-  drawChart2();
-});
+if (googlegrap) {
 
-// Callback that creates and populates a data table,
-// instantiates the pie chart, passes in the data and
-// draws it.
+  // API pour les graph style google
+  google.charts.load('current', { 'packages': ['corechart'] });
 
-// premier Graphique
-function drawChart1() {
-  // Donnée du graph1
-  var data = new google.visualization.DataTable();
-  data.addColumn('string', 'Topping');
-  data.addColumn('number', 'Slices');
-  data.addRows([
-    ['Oui Beaucoup', 2],
-    ['Oui', 6],
-    ['Moyennement', 5],
-    ['Non', 3],
-  ]);
+  google.charts.setOnLoadCallback(function () {
+    drawChart1();
+    drawChart2();
+  });
 
-  var chart = new google.visualization.PieChart(document.getElementById('chart_div--1'));
-  chart.draw(data);
-}
+  // premier Graphique
+  function drawChart1() {
+    // Donnée du graph1
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Topping');
+    data.addColumn('number', 'Slices');
+    data.addRows([
+      ['Oui Beaucoup', 2],
+      ['Oui', 6],
+      ['Moyennement', 5],
+      ['Non', 3],
+    ]);
 
-// Second Graphique
-function drawChart2() {
-  // Donnée du graph2
-  var data = new google.visualization.DataTable();
-  data.addColumn('string', 'Topping');
-  data.addColumn('number', 'Slices');
-  data.addRows([
-    ['Le temps', 7],
-    ['Le prix', 3],
-    ['La vaisselles', 2],
-    ['Le manque d\'\idées', 5],
-  ]);
+    var chart = new google.visualization.PieChart(document.getElementById('chart_div--1'));
+    chart.draw(data);
+  }
 
-  var chart = new google.visualization.PieChart(document.getElementById('chart_div--2'));
-  chart.draw(data);
+  // Second Graphique
+  function drawChart2() {
+    // Donnée du graph2
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Topping');
+    data.addColumn('number', 'Slices');
+    data.addRows([
+      ['Le temps', 7],
+      ['Le prix', 3],
+      ['La vaisselles', 2],
+      ['Le manque d\'\idées', 5],
+    ]);
+
+    var chart = new google.visualization.PieChart(document.getElementById('chart_div--2'));
+    chart.draw(data);
+  }
 }
