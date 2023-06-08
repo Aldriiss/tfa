@@ -6,7 +6,13 @@
             max-width: 400px;
             height: 100%;
         }
+
+
     }
+}
+
+.fonction__title {
+    margin-top: 64px;
 }
 
 //tablette
@@ -21,6 +27,10 @@
     .planning {
         &__img {
             margin-right: 64px;
+        }
+
+        &__creation {
+            margin-left: 64px;
         }
     }
 }
