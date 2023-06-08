@@ -1,6 +1,6 @@
 .footer {
     background-color: $c-alt;
-    height: 96px;
+    height: fit-content;
     width: 100%;
     position: absolute;
     left: 0;
@@ -9,10 +9,25 @@
     &__nav {
         list-style: none;
         display: flex;
+        flex-direction: column;
         justify-content: space-evenly;
         max-width: 1420px;
         align-items: center;
         margin: auto auto;
     }
 
+    &__el {
+        padding: 8px 0;
+    }
+
+}
+
+//tablette
+@media screen and (max-width:720px) {}
+
+//Desktop
+@media screen and (min-width:1080px) {
+    .footer__nav {
+        flex-direction: row;
+    }
 }
