@@ -1,4 +1,8 @@
-.hypothese {}
+.hypothese {
+    .flex {
+        display: flex;
+    }
+}
 
 //tablette
 @media screen and (min-width:720px) {}

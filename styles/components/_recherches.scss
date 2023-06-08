@@ -12,11 +12,11 @@
     }
 
     &__block {
-        margin-top: 32px;
+        margin-top: 64px;
         max-width: 444px;
         box-shadow: rgba(0, 0, 0, 0.2) 4px 4px 4px;
         border-radius: 12px;
-        padding: 24px;
+        padding: 64px 24px 32px 24px;
         background-color: $c-bg;
 
         span {
@@ -28,6 +28,40 @@
     .espace {
         margin-top: 64px;
     }
+
+    .selectionner {
+        box-shadow: rgba(117, 13, 55, 0.4) 4px 4px 4px;
+
+        h3 {
+            color: $c-alt;
+        }
+
+        .recherches__numero {
+            color: $c-alt;
+        }
+    }
+
+    &__numero {
+        font-size: 15rem;
+        font-weight: bolder;
+        z-index: 0;
+        opacity: 0.05;
+        position: absolute;
+        display: block;
+        line-height: 120px;
+
+
+    }
+
+    &__texte {
+        position: relative;
+        z-index: 30;
+
+        h3 {
+            margin: 56px 0;
+        }
+    }
+
 }
 
 //tablette
