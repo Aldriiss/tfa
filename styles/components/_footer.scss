@@ -5,6 +5,7 @@
     position: absolute;
     left: 0;
     padding-top: 28.4px;
+    color: $c-bg;
 
     &__nav {
         list-style: none;
@@ -18,6 +19,33 @@
 
     &__el {
         padding: 8px 0;
+    }
+
+    .lien {
+        display: inline-block;
+        cursor: pointer;
+        color: inherit;
+        text-decoration: none;
+        transition: all 0.5s ease-in-out;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: $c-alt;
+            transition: all 0.5s ease-in-out;
+        }
+
+        &:hover::after {
+            width: 0;
+        }
+
+        &:hover {
+            color: $c-alt;
+            background-color: $c-bg;
+            transition: all 0.5s ease-in-out;
+        }
     }
 
 }
