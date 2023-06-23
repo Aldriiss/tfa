@@ -1,27 +1,38 @@
 header {
-  height: 5rem;
+  height: 100%;
   width: 100%;
   padding: 0 auto;
-  background-color: $c-alt;
+  position: fixed;
+  top: 0;
+  z-index: 999;
 }
 
 .nav {
-  max-width: 1420px;
+  background-color: $c-alt;
   margin-left: auto;
   margin-right: auto;
+
+  &__size {
+    display: flex;
+    max-width: 1420px;
+    justify-content: space-between;
+  }
+
+  &__img {
+    border-radius: inherit;
+  }
 
   &__icones {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    margin: auto;
-    z-index: 120;
     padding: 0 3rem;
     align-items: center;
     margin: 0;
     height: 80px;
     position: relative;
     z-index: 130;
+    width: 100%;
   }
 
   &__menu {
@@ -39,18 +50,18 @@ header {
     margin: 0;
     list-style: none;
     z-index: 10;
-    transition: transform 1s ease-in-out;
+    transition: transform 0.5s ease-in-out;
     transform: translateY(-100%);
   }
 
   //animation menu
   .switch {
-    transition: transform 1s ease-in-out;
+    transition: transform 0.7s ease-in-out;
     transform: translateY(0);
 
     //animation lien menu
     .lien {
-      transition: transform 2s ease-in-out;
+      transition: transform 1s ease-in-out;
       transform: translateY(0);
     }
   }
@@ -71,7 +82,7 @@ header {
       display: block;
       padding: 12px 8px;
       transform: translateY(-100%);
-      transition: transform 2s ease-in-out;
+      transition: transform 1s ease-in-out;
 
       &::after {
         content: "";
@@ -119,7 +130,7 @@ header {
     &__menu {
       width: 100%;
       position: static;
-      transition: transform 1s ease-in-out;
+      transition: transform 0.5s ease-in-out;
       transform: translateY(0);
       flex-direction: row;
       background-color: initial;
@@ -129,7 +140,7 @@ header {
 
       //animation lien menu
       .lien {
-        transition: transform 2s ease-in-out;
+        transition: transform 1s ease-in-out;
         transform: translateY(0);
       }
     }
